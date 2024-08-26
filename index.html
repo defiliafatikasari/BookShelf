@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="RakBuku.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header class="judul">
+      <h1>BookShelf Apps | Aplikasi Rak Buku</h1>
+    </header>
+
+    <main>
+      <div class="atas">
+        <section class="formulir">
+          <h3>Masukkan Buku</h3>
+          <form id="form">
+            <div class="input">
+              <label>Judul : </label>
+              <input type="text" class="kotak-teks" id="titleBuku" required /><br />
+            </div>
+            <div class="input">
+              <label>Penulis : </label>
+              <input type="text" class="kotak-teks" id="authorBuku" required /><br />
+            </div>
+            <div class="input">
+              <label>Tahun : </label>
+              <input type="number" class="kotak-teks" id="yearBuku" required /><br />
+            </div>
+            <div class="input-check">
+              <label>Selesai Membaca</label>
+              <input type="checkbox" class="kotak-teks" id="isCompletedbuku" />
+            </div>
+            <br />
+            <button type="submit" id="submit" name="submit" value="submit">Letakkan Buku</button><br />
+          </form>
+        </section>
+
+        <section class="pencarian">
+          <h3>Cari Buku</h3>
+          <form id="searchBook">
+            <div>
+              <label>Judul : </label><br />
+              <input type="text" class="kotak-teks" id="judulCariBuku" /><br />
+              <button type="submit" id="searchSubmit">Cari</button>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <div class="buku">
+        <section class="kotak-buku" id="sebelum">
+          <h3>Belum Selesai Dibaca</h3>
+          <div class="daftar-buku" id="belumSelesaiDibaca"></div>
+        </section>
+        <section class="kotak-buku" id="sesudah">
+          <h3>Selesai Dibaca</h3>
+          <div class="daftar-buku" id="selesaiDibaca"></div>
+        </section>
+      </div>
+
+      <section>
+        <div class="modal fade" id="modalKonfirmasi" tabindex="-1" aria-labelledby="modalKonfirmasiLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="modalKonfirmasiLabel">Peringatan....</h4>
+                <button type="button" class="btn-tutup" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">Apakah Kamu Yakin Ingin Menghapus Buku Ini?</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-danger" id="konfirmasiHapusButton">Hapus</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="kaki">
+        <p>&copy CopyRight 2024 | <a href="https://www.linkedin.com/in/defilia-fatikasari-760b3026b/">Defilia Fatikasari</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/esm/popper.min.js"></script>
+  </body>
+</html>

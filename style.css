@@ -1,0 +1,137 @@
+html body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(254, 255, 255);
+  color: rgb(49, 47, 47);
+  margin: 0;
+  padding: 0;
+}
+
+.judul {
+  background-color: #ae35df;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.formulir {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.formulir h3 {
+  color: #ae35df;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+.input label {
+  display: block;
+  margin-bottom: 7px;
+}
+.input-check {
+  display: flex;
+  align-items: center;
+}
+.input-check label {
+  margin-right: 10px;
+}
+.input-check input[type='checkbox'] {
+  width: auto;
+  margin-right: 5px;
+}
+.kotak-teks {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ae35df;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #54156d;
+}
+
+.pencarian {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pencarian h3 {
+  color: #ae35df;
+}
+.pencarian label {
+  margin-bottom: 7px;
+}
+#judulCariBuku {
+  margin-bottom: 7px;
+}
+
+.kotak-buku {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.kotak-buku h3 {
+  color: #ae35df;
+}
+
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.modal-header {
+  background-color: #ae35df;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.undo-button,
+.completed-button,
+.delete-button {
+  background-color: #ae35df;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.undo-button:hover,
+.completed-button:hover,
+.delete-button:hover {
+  background-color: #54156d;
+}
+.completed-button,
+.delete-button {
+  margin-left: 10px;
+}
+.modal-footer {
+  justify-content: center;
+}
+
+footer {
+  background-color: #ae35df;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+footer p {
+  margin: 0;
+}
+footer p a {
+  color: #fff;
+}
